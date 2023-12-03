@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ma Boutique de Chaussures</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="./product-detail.html">Ma Boutique de Chaussures</a></h1>
+      <div class="header-icons">
+        <i class="fas fa-shopping-cart" onclick="openCart()"></i>
+        <i class="fas fa-user" onclick="openAccount()"></i>
+      </div>
+    </header>
+
+    <div class="nav">
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Femmes</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Hommes</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Bébés</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Garçon</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Fille</span>
+      </a>
+    </div>
+
+    <main>
+      <div class="wrapper">
+        <aside class="sidebar">
+          <h2>Filtrer par</h2>
+
+          <!-- Exemple de champ de filtrage par catégorie -->
+          <div class="filter-section">
+            <h3>Catégorie</h3>
+            <label>
+              <input type="checkbox" name="category" value="sneakers" />
+              Sneakers
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="boots" />
+              Boots
+            </label>
+            <label>
+              <input type="checkbox" name="category" value="sandals" />
+              Sandals
+            </label>
+            <!-- Ajoutez d'autres catégories ici -->
+          </div>
+
+          <!-- Exemple de champ de filtrage par prix -->
+          <div class="filter-section">
+            <h3>Prix</h3>
+            <label>
+              <input type="radio" name="price" value="0-50" />
+              0 - 50 Fcfa
+            </label>
+            <label>
+              <input type="radio" name="price" value="50-100" />
+              50 - 100 Fcfa
+            </label>
+            <label>
+              <input type="radio" name="price" value="100+" />
+              100+ Fcfa
+            </label>
+          </div>
+        </aside>
+        <!-- Products-->
+        <section class="section section-promotion">
+          <h2>Products</h2>
+          <div class="product-list">
+            <!-- Liste de produits -->
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <div class="product" onclick="openModal(1)">
+              <div class="product-image">
+                <img src="./images/image2.jpg" alt="Chaussure 1" />
+              </div>
+              <div class="product-info">
+                <h2 class="product-titre">Chaussure 1</h2>
+                <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="product-price">Prix : 7000 <span>Fcfa</span></p>
+                <a class="btn-voir" href="./product-detail.html">voir </a>
+              </div>
+            </div>
+            <!-- Ajoutez d'autres produits ici -->
+          </div>
+        </section>
+        <!-- End Promotion -->
+      </div>
+
+      <!-- Enfants -->
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Ma Boutique de Chaussures</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ma Boutique de Chaussures</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Ma Boutique de Chaussures</a></h1>
+      <div class="header-icons">
+        <i class="fas fa-shopping-cart" onclick="openCart()"></i>
+        <i class="fas fa-user" onclick="openAccount()"></i>
+      </div>
+    </header>
+
+    <div class="nav">
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Femmes</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Hommes</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Bébés</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Garçon</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Fille</span>
+      </a>
+    </div>
+
+    <main>
+      <div class="product-detail">
+        <div class="product-detail-container">
+          <div class="product-detail-image">
+            <img src="./images/image2.jpg" alt="Nom du Produit" />
+          </div>
+          <div class="product-detail-info">
+            <h2>Nom du Produit</h2>
+            <p class="product-detail-description">
+              Description détaillée du produit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac efficitur odio. Nulla facilisi. Suspendisse quis cursus nulla.
+            </p>
+            <p class="product-detail-price">Prix : 7000 Fcfa</p>
+            <div class="product-detail-options">
+              <label for="size">Taille :</label>
+              <select id="size" name="size">
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <!-- Ajoutez d'autres tailles si nécessaire -->
+              </select>
+              <button onclick="addToCart(1)">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Ma Boutique de Chaussures</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

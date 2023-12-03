@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ma Boutique de Chaussures</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Ma Boutique de Chaussures</a></h1>
+      <div class="header-icons">
+        <i class="fas fa-shopping-cart" onclick="openCart()"></i>
+        <i class="fas fa-user" onclick="openAccount()"></i>
+      </div>
+    </header>
+
+    <div class="nav">
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Femmes</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Hommes</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Bébés</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Garçon</span>
+      </a>
+      <a href="./products.html">
+        <span>Chaussures</span>
+        <span class="bold">Fille</span>
+      </a>
+    </div>
+
+    <main>
+      <div class="cart">
+        <div class="cart-items">
+          <!-- Exemple d'un produit dans le panier -->
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <img src="./images/image2.jpg" alt="Nom du Produit" />
+            </div>
+            <div class="cart-item-info">
+              <h2>Nom du Produit</h2>
+              <p>Prix : 7000 Fcfa</p>
+              <label for="quantity">Quantité :</label>
+              <input type="number" id="quantity" name="quantity" value="1" />
+              <button onclick="updateCartItem(1)">Mettre à jour</button>
+              <button onclick="removeCartItem(1)">Supprimer</button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <img src="./images/image2.jpg" alt="Nom du Produit" />
+            </div>
+            <div class="cart-item-info">
+              <h2>Nom du Produit</h2>
+              <p>Prix : 7000 Fcfa</p>
+              <label for="quantity">Quantité :</label>
+              <input type="number" id="quantity" name="quantity" value="1" />
+              <button onclick="updateCartItem(1)">Mettre à jour</button>
+              <button onclick="removeCartItem(1)">Supprimer</button>
+            </div>
+          </div>
+          <!-- Ajoutez d'autres produits dans le panier ici -->
+        </div>
+
+        <div class="cart-total">
+          <h2>Total du Panier</h2>
+          <p>Sous-total : 7000 Fcfa</p>
+          <p>Frais de livraison : 500 Fcfa</p>
+          <p>Total à payer : 7500 Fcfa</p>
+          <button onclick="checkout()">Passer la commande</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Ma Boutique de Chaussures</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
